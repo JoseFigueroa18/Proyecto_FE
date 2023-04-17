@@ -1,0 +1,78 @@
+  .empresas {
+    background-color: #2a2a3d;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    border-radius: 10px;
+  }
+  
+  .empresa {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .empresa:first-child {
+    font-weight: bold;
+  }
+  
+  .empresa:hover {
+    background-color: #3c3c5a;
+  }
+  
+  .empresa span {
+    flex-basis: 20%;
+    text-align: center;
+  }
+  
+  .codigo {
+    flex-basis: 10%;
+  }
+  
+  .nombre {
+    flex-basis: 50%;
+  }
+  
+  .status {
+    flex-basis: 20%;
+  }
+  
+  .codigo a {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #f6bd60;
+    color: #2a2a3d;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .codigo a:hover {
+    background-color: #ffb997;
+  }
+
+  .status .UPD{
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #178529;
+    color: #2a2a3d;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    margin-right: 5px;
+  }
+  .status .DEL {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #d10303;
+    color: #2a2a3d;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    margin-right: 5px;
+  }
+  
+  .status a:hover {
+    background-color: #ffb997;
+  }
