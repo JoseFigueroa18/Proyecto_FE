@@ -42,8 +42,8 @@ export const EmpresaFormUX: FC<IEmpresasFormUXProps> = ({
         <FieldSelect
           name="status"
           id="status"
-          labelText="Status"
-          options={[{value:"Pending", text:"Pending"}, {value:"Active", text:"Active"}, {value:"Inactive", text:"Inactive"}]}
+          labelText="Estado"
+          options={[{value:"Pending", text:"Pendiente"}, {value:"Active", text:"Activa"}, {value:"Inactive", text:"Inactiva"}]}
           onChange={onSelectChangeHandler}
           value={status}
         />

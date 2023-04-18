@@ -3,7 +3,7 @@ import { Card } from "../../components/Card";
 import { getHomeData } from "./HomeService";
 import Page from "../../components/Page";
 import { useGetAllQuery } from '@/store/services/empServices';
-import EmpresaEstilos from "../../components/Empresa";
+import "../../components/EmpresaUX.css";
 
 export const Home: FC = () => {
   const {data: empresas} = useGetAllQuery({});
@@ -26,28 +26,27 @@ export const Home: FC = () => {
       });
   }, [refresh]);
   return (
-    <Page>
-      <h1>Empresas</h1>
-      {isLoading && <p>Loading...</p>}
-      {error && <p>{error}</p>}
 
-      <EmpresaEstilos/>
-      <div className="empresa2">
-      {empresas && !isLoading && !error && empresas.map((empresa: any) => (
-        <div className="empresa" key={empresa._id} >
-          <span className="codigo">{empresa.codigo}</span>
-          <span className="nombre">{empresa.nombre}</span>
-          <span className="status">{empresa.status}</span>
-        </div>
-      ))}
+    <Page>
+      <img src="./components/stiff.jpg" alt="" />
+
+      <h1>Modulos</h1><br />
+      <div className="botones-container">
+        <button className="ir-a-empresas" onClick={() => window.location.href='http://127.0.0.1:5173/empresas'}>
+          Empresas
+        </button> 
+        <button className="ir-a-empresas" onClick={() => window.location.href='http://127.0.0.1:5173/productos'}>
+          Productos
+        </button> 
+        <button className="ir-a-empresas" onClick={() => window.location.href='http://127.0.0.1:5173/vendedores'}>
+          Vendedores
+        </button>
       </div>
-      <a
-        onClick={() => {
-          setRefresh(!refresh);
-        }}
-      >
-        Refresh <br />
-      </a>
+      <br />
+
+
+
+
     </Page>
   );
 };

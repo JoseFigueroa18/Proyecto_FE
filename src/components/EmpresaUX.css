@@ -76,3 +76,43 @@
   .status a:hover {
     background-color: #ffb997;
   }
+
+  .botones-container {
+    display: flex;
+    flex-direction: column; /* Colocar los botones en una columna */
+    align-items: center; /* Centrar horizontalmente */
+  }
+  
+  /* Botones */
+  .ir-a-empresas {
+    width: 250px; /* Tamaño fijo para los botones */
+    height: 95px; /* Tamaño fijo para los botones */
+    background-color: #2a2a3d;; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none;
+    padding: 20px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 13.5px 4px;
+    cursor: pointer;
+    border-radius: 10px;
+
+  }
+
+  .ir-a-empresas:hover {
+    background-color: #f6bd60; /* Cambio de color al hacer hover */
+    color: black;
+    /* ... */
+  }
+
+  /*---------------------------------------------*/
+  h1 {
+    color: rgb(5, 5, 12);
+    font-size: 50px;
+    text-align: center;
+  }
+  
+
+  /*-----------------------------------------------------------*/

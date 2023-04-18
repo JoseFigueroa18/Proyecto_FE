@@ -1,5 +1,5 @@
 .page {
-  background-color: #ddd;
+  background-color: #3c3c5a;
   color: #333;
   min-height: 100vh;
 }
@@ -15,10 +15,10 @@
 }
 .content {
   background-color:#fff;
-  padding:1rem;
+  padding:10rem;
   min-height: 100vh;
 }
 .withNavBar .content {
-  margin-top:0.1rem;
-  min-height: calc(100vh - 4.2rem);
+  margin-top:-1.5rem;
+  min-height: calc(100vh - 6rem);
 }
